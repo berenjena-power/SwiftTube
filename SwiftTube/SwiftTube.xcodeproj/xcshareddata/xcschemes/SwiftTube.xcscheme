@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "572EEE4A1F7BEB8500F93F55"
-               BuildableName = "SwiftTube.app"
+               BlueprintIdentifier = "F26128731F82474F00986207"
+               BuildableName = "SwiftTube.framework"
                BlueprintName = "SwiftTube"
                ReferencedContainer = "container:SwiftTube.xcodeproj">
             </BuildableReference>
@@ -33,19 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "572EEE5E1F7BEB8600F93F55"
+               BlueprintIdentifier = "F261287C1F82475000986207"
                BuildableName = "SwiftTubeTests.xctest"
                BlueprintName = "SwiftTubeTests"
-               ReferencedContainer = "container:SwiftTube.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "572EEE691F7BEB8600F93F55"
-               BuildableName = "SwiftTubeUITests.xctest"
-               BlueprintName = "SwiftTubeUITests"
                ReferencedContainer = "container:SwiftTube.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,8 +43,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "572EEE4A1F7BEB8500F93F55"
-            BuildableName = "SwiftTube.app"
+            BlueprintIdentifier = "F26128731F82474F00986207"
+            BuildableName = "SwiftTube.framework"
             BlueprintName = "SwiftTube"
             ReferencedContainer = "container:SwiftTube.xcodeproj">
          </BuildableReference>
@@ -73,16 +63,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "572EEE4A1F7BEB8500F93F55"
-            BuildableName = "SwiftTube.app"
+            BlueprintIdentifier = "F26128731F82474F00986207"
+            BuildableName = "SwiftTube.framework"
             BlueprintName = "SwiftTube"
             ReferencedContainer = "container:SwiftTube.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -92,16 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "572EEE4A1F7BEB8500F93F55"
-            BuildableName = "SwiftTube.app"
+            BlueprintIdentifier = "F26128731F82474F00986207"
+            BuildableName = "SwiftTube.framework"
             BlueprintName = "SwiftTube"
             ReferencedContainer = "container:SwiftTube.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

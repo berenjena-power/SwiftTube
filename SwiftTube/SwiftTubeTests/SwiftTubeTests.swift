@@ -2,8 +2,8 @@
 //  SwiftTubeTests.swift
 //  SwiftTubeTests
 //
-//  Created by Raul Pedraza on 27/09/2017.
-//  Copyright © 2017 Raul Pedraza. All rights reserved.
+//  Created by Sebastián Varela on 2/10/17.
+//  Copyright © 2017 Berenjena-Power. All rights reserved.
 //
 
 import XCTest

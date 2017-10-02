@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SwiftTube
-//
-//  Created by Raul Pedraza on 27/09/2017.
-//  Copyright © 2017 Raul Pedraza. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
