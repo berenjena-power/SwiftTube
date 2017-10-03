@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570BFCAD1F837E930082C3D5 /* SwiftTube.html in Resources */ = {isa = PBXBuildFile; fileRef = 570BFCAC1F837E930082C3D5 /* SwiftTube.html */; };
+		5711F9591F829287002816CC /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9501F829286002816CC /* PlayerState.swift */; };
+		5711F95B1F829287002816CC /* PlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9521F829286002816CC /* PlayerDelegate.swift */; };
+		5711F95C1F829287002816CC /* PlayerQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9531F829287002816CC /* PlayerQuality.swift */; };
+		5711F95D1F829287002816CC /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9541F829287002816CC /* PlayerViewModel.swift */; };
+		5711F95E1F829287002816CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9551F829287002816CC /* Player.swift */; };
+		5711F95F1F829287002816CC /* PowerWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9561F829287002816CC /* PowerWebView.swift */; };
+		5711F9601F829287002816CC /* PlayerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9571F829287002816CC /* PlayerEvents.swift */; };
+		5711F9611F829287002816CC /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5711F9581F829287002816CC /* URLExtension.swift */; };
 		F261287E1F82475000986207 /* SwiftTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26128741F82474F00986207 /* SwiftTube.framework */; };
 		F26128831F82475000986207 /* SwiftTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26128821F82475000986207 /* SwiftTubeTests.swift */; };
 		F26128851F82475000986207 /* SwiftTube.h in Headers */ = {isa = PBXBuildFile; fileRef = F26128771F82474F00986207 /* SwiftTube.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570BFCAC1F837E930082C3D5 /* SwiftTube.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SwiftTube.html; sourceTree = "<group>"; };
+		5711F9501F829286002816CC /* PlayerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		5711F9521F829286002816CC /* PlayerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDelegate.swift; sourceTree = "<group>"; };
+		5711F9531F829287002816CC /* PlayerQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerQuality.swift; sourceTree = "<group>"; };
+		5711F9541F829287002816CC /* PlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		5711F9551F829287002816CC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5711F9561F829287002816CC /* PowerWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerWebView.swift; sourceTree = "<group>"; };
+		5711F9571F829287002816CC /* PlayerEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEvents.swift; sourceTree = "<group>"; };
+		5711F9581F829287002816CC /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		F26128741F82474F00986207 /* SwiftTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26128771F82474F00986207 /* SwiftTube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftTube.h; sourceTree = "<group>"; };
 		F26128781F82474F00986207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +68,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5711F9621F8292BB002816CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9521F829286002816CC /* PlayerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5711F9631F8292C8002816CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9571F829287002816CC /* PlayerEvents.swift */,
+				5711F9531F829287002816CC /* PlayerQuality.swift */,
+				5711F9501F829286002816CC /* PlayerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5711F9641F8292CD002816CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9541F829287002816CC /* PlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5711F9651F8292D3002816CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9551F829287002816CC /* Player.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5711F9661F8292D9002816CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9561F829287002816CC /* PowerWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5711F9671F8292DF002816CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5711F9581F829287002816CC /* URLExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5711F96A1F829CC7002816CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				570BFCAC1F837E930082C3D5 /* SwiftTube.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F261286A1F82474F00986207 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +147,13 @@
 		F26128761F82474F00986207 /* SwiftTube */ = {
 			isa = PBXGroup;
 			children = (
+				5711F96A1F829CC7002816CC /* Resources */,
+				5711F9621F8292BB002816CC /* Protocols */,
+				5711F9631F8292C8002816CC /* Models */,
+				5711F9641F8292CD002816CC /* ViewModels */,
+				5711F9651F8292D3002816CC /* Controllers */,
+				5711F9661F8292D9002816CC /* Views */,
+				5711F9671F8292DF002816CC /* Extensions */,
 				F26128771F82474F00986207 /* SwiftTube.h */,
 				F26128781F82474F00986207 /* Info.plist */,
 			);
@@ -149,6 +232,7 @@
 				TargetAttributes = {
 					F26128731F82474F00986207 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					F261287C1F82475000986207 = {
@@ -180,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570BFCAD1F837E930082C3D5 /* SwiftTube.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5711F95C1F829287002816CC /* PlayerQuality.swift in Sources */,
+				5711F95D1F829287002816CC /* PlayerViewModel.swift in Sources */,
+				5711F9591F829287002816CC /* PlayerState.swift in Sources */,
+				5711F95E1F829287002816CC /* Player.swift in Sources */,
+				5711F9611F829287002816CC /* URLExtension.swift in Sources */,
+				5711F95F1F829287002816CC /* PowerWebView.swift in Sources */,
+				5711F95B1F829287002816CC /* PlayerDelegate.swift in Sources */,
+				5711F9601F829287002816CC /* PlayerEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +428,7 @@
 		F26128891F82475000986207 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.berenjena-power.SwiftTube";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +450,7 @@
 		F261288A1F82475000986207 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -375,6 +471,7 @@
 		F261288C1F82475000986207 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftTubeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -388,6 +485,7 @@
 		F261288D1F82475000986207 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftTubeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

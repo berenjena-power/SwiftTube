@@ -1,17 +1,27 @@
 import UIKit
+import SwiftTube
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, PlayerDelegate {
+ 
+    @IBOutlet weak var powerWebView: PowerWebView!
+    var swiftTube: Player!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        swiftTube = Player(webView: powerWebView, delegate: self)
+        swiftTube.loadVideoID(with: "")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func playerReady(_ videoPlayer: PowerWebView) {
+        swiftTube.play()
     }
-
+    
+    func playerStateChanged(_ videoPlayer: PowerWebView, playerState: PlayerState) {
+        
+    }
+    
+    func playerQualityChanged(_ videoPlayer: PowerWebView, playbackQuality: PlayerQuality) {
+        
+    }
 
 }
 
