@@ -1,11 +1,3 @@
-//
-//  Player.swift
-//  SwiftTube
-//
-//  Created by Raul Pedraza on 27/09/2017.
-//  Copyright © 2017 Raul Pedraza. All rights reserved.
-//
-
 import UIKit
 
 public class Player: NSObject {
@@ -166,7 +158,7 @@ public class Player: NSObject {
     }
 }
 
-extension PlayerViewController: UIWebViewDelegate {
+extension Player: UIWebViewDelegate {
     
     open func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         let url = request.url
@@ -177,21 +169,5 @@ extension PlayerViewController: UIWebViewDelegate {
         return true
     }
 }
-
-//extension PlayerViewController: PlayerDelegate {
-//    func playerReady(_ videoPlayer: PowerWebView) {
-//        play()
-//        delegate?.playerReady(webView)
-//    }
-//    
-//    func playerStateChanged(_ videoPlayer: PowerWebView, playerState: PlayerState) {
-//        delegate?.playerStateChanged(videoPlayer, playerState: playerState)
-//    }
-//    
-//    func playerQualityChanged(_ videoPlayer: PowerWebView, playbackQuality: PlayerQuality) {
-//        delegate?.playerQualityChanged(videoPlayer, playbackQuality: playbackQuality)
-//    }
-    
-//}
 
 
