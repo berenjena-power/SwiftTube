@@ -11,10 +11,6 @@ public class PlayerController: UIViewController {
         setup()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     private func setup() {
         webView.frame = view.frame
         view.addSubview(webView)
