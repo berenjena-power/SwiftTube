@@ -1,14 +1,23 @@
 import UIKit
 
-public class Player: NSObject {
+public class PlayerController: UIViewController {
     
     private var viewModel = PlayerViewModel()
-    public var delegate: PlayerDelegate!
-    private var webView: PowerWebView!
+    private var webView = PowerWebView()
+    public var delegate: PlayerDelegate?
     
-    required public init(webView: PowerWebView, delegate: PlayerDelegate) {
-        self.webView = webView
-        self.delegate = delegate
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    private func setup() {
+        webView.frame = view.frame
+        view.addSubview(webView)
     }
     
     public func loadVideoID(with videoId: String) {
@@ -158,7 +167,7 @@ public class Player: NSObject {
     }
 }
 
-extension Player: UIWebViewDelegate {
+extension PlayerController: UIWebViewDelegate {
     
     open func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         let url = request.url
